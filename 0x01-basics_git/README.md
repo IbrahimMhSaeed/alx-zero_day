@@ -1,3 +1,110 @@
+# Git & GitHub Basics
+
+## What is source code management?
+A way to track, organize, and manage changes to code over time.
+
+## What is Git?
+A version control system that helps you track changes and manage code history locally.
+
+## What is GitHub?
+A cloud platform that hosts Git repositories and makes collaboration easier.
+
+## What is the difference between Git and GitHub?
+- **Git** = the tool for version control (runs on your computer).  
+- **GitHub** = an online service to store and share Git repositories.  
+
+---
+
+## How to create a repository
+1. On GitHub, click **New Repository**.  
+2. Name it, choose visibility (public/private), and create.  
+3. Clone it to your computer with:  
+   ```bash
+   git clone <repo-url>
+```
+
+---
+
+## What is a README?
+
+A file (`README.md`) that explains what the project is about, how to set it up, and how to use it.
+
+## How to write good READMEs
+
+* Project title and description
+* Installation/setup instructions
+* Usage examples
+* Contribution guide
+* License information
+
+---
+
+## How to commit
+
+```bash
+git add <file>
+git commit -m "Your message here"
+```
+
+## How to write helpful commit messages
+
+* Be clear and concise.
+* Use the present tense (e.g., "Add search function").
+* Explain why the change was made if needed.
+
+---
+
+## How to push code
+
+```bash
+git push origin main
+```
+
+## How to pull updates
+
+```bash
+git pull origin main
+```
+
+---
+
+## How to create a branch
+
+```bash
+git checkout -b new-feature
+```
+
+## How to merge branches
+
+1. Switch to main:
+
+   ```bash
+   git checkout main
+   ```
+2. Merge your branch:
+
+   ```bash
+   git merge new-feature
+   ```
+
+---
+
+## How to work as collaborators on a project
+
+* Add collaborators in GitHub repo settings.
+* Each person clones the repo.
+* Use branches and pull requests to manage changes.
+
+---
+
+## Which files should and should not appear in your repo
+
+**Should appear**: source code, README, configuration files, docs.
+**Should not appear**: passwords, API keys, build artifacts, OS/system files (use `.gitignore` to exclude them).
+
+
+---
+
 # Basic Formatting of Markdown
 
 ## Headings
@@ -215,7 +322,7 @@ A simple REST API to manage to-do items.
 - `DELETE /todos/:id` → delete a to-do
 
 
-##**Architecture.md**
+## **Architecture.md**
 
 ### Architecture
 
